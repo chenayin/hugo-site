@@ -1,0 +1,10 @@
+{
+  "name": "别人打药我拽管",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hugo"
+  },
+  "devDependencies": {
+    "hugo-bin": "^0.120.0"
+  }
+}
