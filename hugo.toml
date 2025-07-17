@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
+baseURL = 'https://net.chenayin.com/'
+languageCode = 'zh-CN'
 title = '别人打药我拽管'
 theme = 'PaperMod'
