@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '别人打药我拽管'
+theme = 'PaperMod'
