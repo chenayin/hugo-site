@@ -1,0 +1,26 @@
+/* 设置全局字体为仿宋 */
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, div, article, section, ul, li {
+  font-family: "FangSong", "仿宋", "KaiTi", serif !important;
+}
+
+/* 设置背景颜色为柔和米色 */
+body {
+  color: #000000; /* 文本颜色设置为黑色 */
+  line-height: 1.8; /* 行高设置，提高可读性 */
+  font-size: 18px; /* 正文字体大小 */
+}
+
+/* 调整各级标题字体大小（调小） */
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; }
+
+/* 标题样式优化 */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  font-weight: normal; /* 如果需要，可以调整标题的粗细 */
+}
