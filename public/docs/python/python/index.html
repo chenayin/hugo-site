@@ -319,6 +319,26 @@ print(str[:-5]) # ab
                 
                     
                     
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">Newsmode</i>
+                                AI 实践
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/">MCP 初试验</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
                         <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">Summarize</i>
@@ -1003,10 +1023,10 @@ print(1&#43;2.3) # 3.3 </code>
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/">
+		<a href="/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> 告别代码工人</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> MCP 初试验</p>
 					
 				</div>
 			</div>
@@ -1203,6 +1223,20 @@ print(1&#43;2.3) # 3.3 </code>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1239,6 +1273,24 @@ print(1&#43;2.3) # 3.3 </code>
     index.add(
             {
                 id:  3 ,
+                href: "\/docs\/ai\/",
+                title: "AI 实践",
+                description: "",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/ai\/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C\/",
+                title: "MCP 初试验",
+                description: "Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\n",
+                content: "Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\nlogging:\rpattern:\rconsole:\rspring:\rmain:\rbanner-mode: off 相关的配置全集 ： 点击查看\n编写Service link官方文档内容如下：\n@Service 注解会自动将服务注册到应用程序上下文中。Spring AI @Tool 注解，使得创建和维护 MCP 工具变得非常容易。The auto-configuration will automatically register these tools with the MCP server. 自动配置会自动将这些工具注册到 MCP 服务器上。\n作者按： 看起来与平常编写sevice，并无二异。但其中暗藏玄机\n和前面提到的一样， 编码过程不要出现任何打印输出的内容，如果非要打印，以err的形式打印 Sysout.err.println(); @Tool 注解会将对应的方法 注册到MCP服务器上作为工具使用 package com.xmic.mcp.data.analysis.service;\rimport com.fasterxml.jackson.databind.ObjectMapper;\rimport com.xmic.mcp.data.analysis.common.Constants;\rimport com.xmic.mcp.data.analysis.common.R;\rimport com.xmic.mcp.data.analysis.common.ResponseData;\rimport com.xmic.mcp.data.analysis.dto.DataQueryDTO;\rimport com.xmic.mcp.data.analysis.dto.ItemDTO;\rimport com.xmic.mcp.data.analysis.utils.JsonUtils;\rimport org.springframework.ai.tool.annotation.Tool;\rimport org.springframework.beans.factory.annotation.Autowired;\rimport org.springframework.stereotype.Service;\rimport org.springframework.web.client.RestClient;\rimport java.util.HashMap;\rimport java.util.List;\rimport java.util.Map;\rimport java.util.Objects;\r@Service\rpublic class DataQueryService {\r@Autowired\rprivate ObjectMapper objectMapper;\rprivate static final String BASE_URL = \"http://192.168.15.172/api\";\rprivate RestClient restClient;\rpublic DataQueryService() {\rthis.restClient = RestClient.builder()\r.baseUrl(BASE_URL)\r.defaultHeader(\"Accept\", \"*/*\")\r.defaultHeader(\"Content-Type\", \"application/json\")\r.defaultHeader(\"User-Agent\", \"WeatherApiClient/1.0 (zxt@xmic.com)\")\r.defaultHeader(\"Authorization\", Constants.TOKEN_NEVER_EXPIRE)\r.build();\r}\r@Tool(description = \"依据工作面code和设备因子名称查询对应的历史数据，包含 最大值，平均值，和最小值\")\rpublic String queryHistoryDataOnFaceCode(DataQueryDTO query) {\r// 判断query中 faceCode ,factorCode 不能为空\rif (Objects.isNull(query.getFaceCode()) || Objects.isNull(query.getFactorCodes())) {\rreturn \"faceCode 和 factorCode 不能为空\";\r}\rMap result = new HashMap\u003c\u003e();\rR response = restClient.post()\r.uri(\"/data/history/chart/figure2D\")\r.body(query)\r.retrieve()\r.body(R.class);\rif (Objects.isNull(response)) {\rresult.put(\"msg\", \"查询失败了\");\rreturn JsonUtils.toJson(result);\r}\rif (Objects.equals(response.getStatus(), R.OK)) {\rResponseData responseData = objectMapper.convertValue(response.getData(), ResponseData.class);\rMap"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
                 href: "\/docs\/python\/",
                 title: "Python",
                 description: "",
@@ -1247,7 +1299,7 @@ print(1&#43;2.3) # 3.3 </code>
         );
     index.add(
             {
-                id:  4 ,
+                id:  6 ,
                 href: "\/docs\/python\/python\/",
                 title: "Python学习笔记",
                 description: " 笔者为 Javaer 所以仅记录和Java语言的不同之处，方便快速学习\n基础数据类型 link 数字 bool（布尔型）：True | False\n笔者按： 布尔值要驼峰命令\ncomplex （复数），如 1 + 2j、 1.1 + 2.2j。\n笔者按： 已经忘记复数这个数学概念啦~\n字符串 索引 字符串的组成元素为字符，每个字符在字符串中有对应的索引。\n和java不同的是，不光有正序索引，还有倒序索引\n截取 字符串的截取，都是 前闭后开 或者 叫 含头不含尾\npython字符串的截取和索引强相关；\n但又因为有正序和倒序，两排索引，所以截取时非常灵活，使用时也要谨慎\n图片来自网络，倒数第二个例子有点奇怪： 描述和结果都不对；要实现输出结果ab，可通过如下方式\nprint(str[:2]) # ab\rprint(str[:-5]) # ab str=\"abcdefg\"\rprint(str[1:]) # bcdefg\rprint(str[:5]) # abcde\rprint(str[1:5]) # bcde\rprint(str[-4:]) # defg\rprint(str[-2:-6]) # 空字符串 是 '' 不是None\rprint(str[-6:-2]) #bcde\rprint(str[::-1]) # 字符串反转 gfedcba\rprint(str[:2]) # ab\rprint(str[:-5]) # ab 列表 笔者按： 和Java中的数组特点一样； 最大最大的区别是 一个数组可以有不同类型的元素；\n",

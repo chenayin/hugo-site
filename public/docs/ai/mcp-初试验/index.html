@@ -14,7 +14,7 @@
 
 <html lang="zh-CN"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
-    <title>Python | 别人打药我拽管</title>
+    <title>MCP 初试验 | 别人打药我拽管</title>
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
@@ -29,13 +29,145 @@
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
-<meta property="og:title" content="Python" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/docs/python/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu_d7caed51a495b882.png"/><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu_d7caed51a495b882.png"/>
-<meta name="twitter:title" content="Python"/>
-<meta name="twitter:description" content=""/>
+<meta property="og:title" content="MCP 初试验" />
+<meta property="og:description" content="Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。
+Where are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作
+How can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）
+示例 link
+MCP实现方式并不拘泥于某种编程语言，本文以Java实现。
+System requirements  系统要求 linkJava 17 或更高版本已安装。
+Spring Boot 3.3.x 或更高版本
+依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+  &lt;dependencies&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-ai-starter-mcp-server&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-web&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+&lt;/dependencies&gt;
+  
+  
+Best Practices 最佳实践 link
+作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。
+
+Use a logging library that writes to stderr or files.
+使用将日志写入 stderr 或文件的日志库。
+Ensure any configured logging library will not write to STDOUT
+确保任何配置的日志库不会将日志写入 STDOUT
+
+程序属性配置 link
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+  spring.main.bannerMode=off
+logging.pattern.console=
+  
+  
+或者习惯yaml的话" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu_74b396925eccb19f.png"/><meta property="article:section" content="docs" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu_74b396925eccb19f.png"/>
+<meta name="twitter:title" content="MCP 初试验"/>
+<meta name="twitter:description" content="Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。
+Where are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作
+How can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）
+示例 link
+MCP实现方式并不拘泥于某种编程语言，本文以Java实现。
+System requirements  系统要求 linkJava 17 或更高版本已安装。
+Spring Boot 3.3.x 或更高版本
+依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+  &lt;dependencies&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-ai-starter-mcp-server&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-web&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+&lt;/dependencies&gt;
+  
+  
+Best Practices 最佳实践 link
+作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。
+
+Use a logging library that writes to stderr or files.
+使用将日志写入 stderr 或文件的日志库。
+Ensure any configured logging library will not write to STDOUT
+确保任何配置的日志库不会将日志写入 STDOUT
+
+程序属性配置 link
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+  spring.main.bannerMode=off
+logging.pattern.console=
+  
+  
+或者习惯yaml的话"/>
 
     
         <link rel="alternate" type="application/atom+xml" title="Atom feed for 别人打药我拽管" href="/index.xml" />
@@ -91,17 +223,17 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">Newsmode</i>
                                 AI 实践
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="http://localhost:1313/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/">MCP 初试验</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="http://localhost:1313/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/">MCP 初试验</a></li>
                                         
                                     
                                 </ul>
@@ -111,12 +243,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">Summarize</i>
                                 Python
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -237,10 +369,18 @@
                     <meta itemprop="position" content='1' />
                 </li>
             
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/ai/">
+                        <span itemprop="name">AI 实践</span>
+                    </a>
+                    <meta itemprop="position" content='2' />
+                </li>
+            
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Python</span>
-                <meta itemprop="position" content='2' />
+                <span itemprop="name">MCP 初试验</span>
+                <meta itemprop="position" content='3' />
             </li>
         
     </ul>
@@ -248,54 +388,383 @@
                                     
                                     <div class="row flex-xl-nowrap">
                                         
-                                        <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+                                        <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#where-are-we我们现在在哪">Where are we?（我们现在在哪？）</a></li>
+    <li><a href="#where-are-we-going我们要到哪去">Where are we going?（我们要到哪⼉去？）</a></li>
+    <li><a href="#how-can-we-get-there我们如何到达那">How can we get there?（我们如何到达那⾥？）</a></li>
+    <li><a href="#示例">示例</a>
+      <ul>
+        <li><a href="#system-requirements--系统要求">System requirements  系统要求</a></li>
+        <li><a href="#依赖选择">依赖选择</a></li>
+        <li><a href="#best-practices-最佳实践">Best Practices 最佳实践</a></li>
+        <li><a href="#程序属性配置">程序属性配置</a></li>
+        <li><a href="#编写service">编写Service</a></li>
+        <li><a href="#启动类">启动类</a></li>
+        <li><a href="#客户端使用">客户端使用</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考文档">参考文档</a></li>
+  </ul>
+</nav>
     </toc></div>
                                         
                                         
-                                        <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                        <div class="docs-toc-mobile    d-print-none d-xl-none">
                                             <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                                 Table of Contents
                                             </button>
-<nav id="toc-mobile"></nav></div>
-                                        <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li><a href="#where-are-we我们现在在哪">Where are we?（我们现在在哪？）</a></li>
+    <li><a href="#where-are-we-going我们要到哪去">Where are we going?（我们要到哪⼉去？）</a></li>
+    <li><a href="#how-can-we-get-there我们如何到达那">How can we get there?（我们如何到达那⾥？）</a></li>
+    <li><a href="#示例">示例</a>
+      <ul>
+        <li><a href="#system-requirements--系统要求">System requirements  系统要求</a></li>
+        <li><a href="#依赖选择">依赖选择</a></li>
+        <li><a href="#best-practices-最佳实践">Best Practices 最佳实践</a></li>
+        <li><a href="#程序属性配置">程序属性配置</a></li>
+        <li><a href="#编写service">编写Service</a></li>
+        <li><a href="#启动类">启动类</a></li>
+        <li><a href="#客户端使用">客户端使用</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考文档">参考文档</a></li>
+  </ul>
+</nav></div>
+                                        <div class="docs-content col-12 col-xl-9 mt-0">
                                             <div class="mb-0 d-flex">
                                                 
-                                                <i class="material-icons title-icon me-2">Summarize</i>
+                                                <i class="material-icons title-icon me-2">article</i>
                                                 
                                                 <h1 class="content-title mb-0">
-                                                    Python
+                                                    MCP 初试验
                                                     
                                                 </h1>
                                             </div>
                                             
                                             <div id="content" class="main-content" >
                                                 
-    <div class="row flex-xl-wrap">
-        
-        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
-            <a class="text-decoration-none text-reset" href="http://localhost:1313/docs/python/python/">
-                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-                    <span class="icon-color d-flex my-3">
-                        <i class="material-icons align-middle">article</i>
-                        
-                        
-                    </span>
-                    <div class="card-body p-0 content">
-                        <p class="fs-5 fw-semibold card-title mb-1">Python学习笔记</p>
-                        <p class="para card-text mb-0"></p>
-                    </div>
-                    
-                </div>
-            </a>
-        </div>
-        
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <h2 id="where-are-we我们现在在哪">Where are we?（我们现在在哪？） <a href="#where-are-we%e6%88%91%e4%bb%ac%e7%8e%b0%e5%9c%a8%e5%9c%a8%e5%93%aa" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。</p>
+<h2 id="where-are-we-going我们要到哪去">Where are we going?（我们要到哪⼉去？） <a href="#where-are-we-going%e6%88%91%e4%bb%ac%e8%a6%81%e5%88%b0%e5%93%aa%e5%8e%bb" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作</p>
+<h2 id="how-can-we-get-there我们如何到达那">How can we get there?（我们如何到达那⾥？） <a href="#how-can-we-get-there%e6%88%91%e4%bb%ac%e5%a6%82%e4%bd%95%e5%88%b0%e8%be%be%e9%82%a3" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）</p>
+<h2 id="示例">示例 <a href="#%e7%a4%ba%e4%be%8b" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><blockquote>
+<p>MCP实现方式并不拘泥于某种编程语言，本文以Java实现。</p></blockquote>
+<h3 id="system-requirements--系统要求">System requirements  系统要求 <a href="#system-requirements--%e7%b3%bb%e7%bb%9f%e8%a6%81%e6%b1%82" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Java 17 或更高版本已安装。
+Spring Boot 3.3.x 或更高版本</p>
+<h3 id="依赖选择">依赖选择 <a href="#%e4%be%9d%e8%b5%96%e9%80%89%e6%8b%a9" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>通过 SpringBoot 项目初始化之后，再额外添加以下依赖</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="cdfbd36" class="language-xml ">
+  <code>&lt;dependencies&gt;
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-ai-starter-mcp-server&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+
+      &lt;dependency&gt;
+          &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+          &lt;artifactId&gt;spring-web&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+&lt;/dependencies&gt;</code>
+  </pre>
+  </div>
+<h3 id="best-practices-最佳实践">Best Practices 最佳实践 <a href="#best-practices-%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><blockquote>
+<p>作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。</p></blockquote>
+<ol>
+<li>Use a logging library that writes to stderr or files.
+使用将日志写入 stderr 或文件的日志库。</li>
+<li>Ensure any configured logging library will not write to STDOUT
+确保任何配置的日志库不会将日志写入 STDOUT</li>
+</ol>
+<h3 id="程序属性配置">程序属性配置 <a href="#%e7%a8%8b%e5%ba%8f%e5%b1%9e%e6%80%a7%e9%85%8d%e7%bd%ae" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="bb11669" class="language-properties ">
+  <code>spring.main.bannerMode=off
+logging.pattern.console=</code>
+  </pre>
+  </div>
+<p>或者习惯yaml的话</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="79c42fe" class="language-yaml ">
+  <code>logging:
+  pattern:
+    console:
+spring:
+  main:
+    banner-mode: off</code>
+  </pre>
+  </div>
+<p>相关的配置全集 ： <a href="https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html#_configuration_properties" rel="external" target="_blank">点击查看<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<h3 id="编写service">编写Service <a href="#%e7%bc%96%e5%86%99service" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>官方文档内容如下：</p>
+<blockquote>
+<p><code>@Service</code> 注解会自动将服务注册到应用程序上下文中。Spring AI <code>@Tool</code> 注解，使得创建和维护 MCP 工具变得非常容易。The auto-configuration will automatically register these tools with the MCP server.
+自动配置会自动将这些工具注册到 MCP 服务器上。</p></blockquote>
+<blockquote>
+<p>作者按： 看起来与平常编写sevice，并无二异。但其中暗藏玄机</p>
+<ol>
+<li>和前面提到的一样， 编码过程不要出现任何打印输出的内容，如果非要打印，以err的形式打印 Sysout.err.println();</li>
+<li>@Tool 注解会将对应的方法 注册到MCP服务器上作为工具使用</li>
+</ol></blockquote>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="faadc34" class="language-java ">
+  <code>package com.xmic.mcp.data.analysis.service;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.xmic.mcp.data.analysis.common.Constants;
+import com.xmic.mcp.data.analysis.common.R;
+import com.xmic.mcp.data.analysis.common.ResponseData;
+import com.xmic.mcp.data.analysis.dto.DataQueryDTO;
+import com.xmic.mcp.data.analysis.dto.ItemDTO;
+import com.xmic.mcp.data.analysis.utils.JsonUtils;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+
+@Service
+public class DataQueryService {
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    private static final String BASE_URL = &#34;http://192.168.15.172/api&#34;;
+
+    private RestClient restClient;
+
+    public DataQueryService() {
+        this.restClient = RestClient.builder()
+                .baseUrl(BASE_URL)
+                .defaultHeader(&#34;Accept&#34;, &#34;*/*&#34;)
+                .defaultHeader(&#34;Content-Type&#34;, &#34;application/json&#34;)
+                .defaultHeader(&#34;User-Agent&#34;, &#34;WeatherApiClient/1.0 (zxt@xmic.com)&#34;)
+                .defaultHeader(&#34;Authorization&#34;, Constants.TOKEN_NEVER_EXPIRE)
+                .build();
+    }
+
+
+    @Tool(description = &#34;依据工作面code和设备因子名称查询对应的历史数据，包含 最大值，平均值，和最小值&#34;)
+    public String queryHistoryDataOnFaceCode(DataQueryDTO query) {
+
+        // 判断query中 faceCode ,factorCode 不能为空
+        if (Objects.isNull(query.getFaceCode()) || Objects.isNull(query.getFactorCodes())) {
+            return &#34;faceCode 和 factorCode 不能为空&#34;;
+        }
+
+        Map&lt;String, Object&gt; result = new HashMap&lt;&gt;();
+        R response = restClient.post()
+                .uri(&#34;/data/history/chart/figure2D&#34;)
+                .body(query)
+                .retrieve()
+                .body(R.class);
+
+        if (Objects.isNull(response)) {
+            result.put(&#34;msg&#34;, &#34;查询失败了&#34;);
+            return JsonUtils.toJson(result);
+        }
+
+        if (Objects.equals(response.getStatus(), R.OK)) {
+            ResponseData responseData = objectMapper.convertValue(response.getData(), ResponseData.class);
+            Map&lt;String, List&lt;List&lt;Object&gt;&gt;&gt; records = responseData.getRecords();
+
+            Map&lt;String, Object&gt; map = new HashMap&lt;&gt;();
+            for (String factorCode : records.keySet()) {
+                List&lt;List&lt;Object&gt;&gt; record = records.get(factorCode);
+                List&lt;ItemDTO&gt; list = record.stream().map(row -&gt; ItemDTO.of(row.get(0), row.get(1), row.get(2), row.get(3))).toList();
+                map.put(factorCode, list);
+            }
+            String json = JsonUtils.toJson(map);
+            result.put(&#34;data&#34;, json);
+            result.put(&#34;msg&#34;, &#34;查询成功了&#34;);
+        } else if (Objects.equals(response.getStatus(), R.NG)) {
+            // 请求失败
+            result.put(&#34;msg&#34;, &#34;抱歉，获取数据时出错了,请确认参数完整后重试一下吧~&#34;);
+        } else if (Objects.equals(response.getStatus(), R.KA)) {
+            // 请求接口时 参数异常
+            result.put(&#34;msg&#34;, &#34;你需要提供完整的参数才能查到数据哦~&#34;);
+        } else {
+            result.put(&#34;msg&#34;, &#34;查询过程中出现了未知的问题,请稍后重试或联系管理员~&#34;);
+        }
+        return JsonUtils.toJson(result);
+    }
+
+
+}</code>
+  </pre>
+  </div>
+<h3 id="启动类">启动类 <a href="#%e5%90%af%e5%8a%a8%e7%b1%bb" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><blockquote>
+<p>使用 <code>MethodToolCallbackProvider</code> 工具将 <code>@Tools</code> 转换为 MCP 服务器使用的可执行回调。</p></blockquote>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="4605112" class="language-java ">
+  <code>package com.xmic.mcp.data.analysis;
+
+import com.xmic.mcp.data.analysis.service.DataQueryService;
+import com.xmic.mcp.data.analysis.service.DeviceFactorService;
+import org.springframework.ai.tool.ToolCallbackProvider;
+import org.springframework.ai.tool.method.MethodToolCallbackProvider;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class McpDataAnalysisApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(McpDataAnalysisApplication.class, args);
+    }
+
+
+    @Bean
+    public ToolCallbackProvider dataQueryTools(DataQueryService dataQueryService) {
+        return MethodToolCallbackProvider.builder().toolObjects(dataQueryService).build();
+    }
+}</code>
+  </pre>
+  </div>
+<h3 id="客户端使用">客户端使用 <a href="#%e5%ae%a2%e6%88%b7%e7%ab%af%e4%bd%bf%e7%94%a8" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>在对应的客户端位置添加对应的mcp工具配置，添加如下内容</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="5ee7796" class="language-json ">
+  <code>{
+  &#34;mcpServers&#34;: {
+    &#34;spring-ai-mcp-weather&#34;: {
+      &#34;command&#34;: &#34;java&#34;,
+      &#34;args&#34;: [
+        &#34;-Dspring.ai.mcp.server.transport=STDIO&#34;,
+        &#34;-jar&#34;,
+        &#34;C:\\ABSOLUTE\\PATH\\TO\\PARENT\\FOLDER\\weather\\mcp-weather-stdio-server-0.0.1-SNAPSHOT.jar&#34;
+      ]
+    }
+  }
+}</code>
+  </pre>
+  </div>
+<h2 id="参考文档">参考文档 <a href="#%e5%8f%82%e8%80%83%e6%96%87%e6%a1%a3" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p><a href="https://modelcontextprotocol.io/quickstart/server#windows" rel="external" target="_blank">For Server Developers - Model Context Protocol<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<p><a href="https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-stdio-server" rel="external" target="_blank">spring-ai-examples 示例项目<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<p><a href="https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html#_configuration_properties" rel="external" target="_blank">MCP Server Boot Starter :: Spring AI Reference<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+
     </div>
 
+    
+
+    
                                             </div>
                                             <div><hr class="doc-hr">
 <div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> 告别代码工人</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/python/python/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Python学习笔记 <i class="material-icons align-middle">navigate_next</i></p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
 </div></div>
                                         </div>
                                     </div>
@@ -547,8 +1016,8 @@
                 id:  4 ,
                 href: "\/docs\/ai\/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C\/",
                 title: "MCP 初试验",
-                description: "MCP 初试验 linkWhere are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\n",
-                content: "MCP 初试验 linkWhere are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\nlogging:\rpattern:\rconsole:\rspring:\rmain:\rbanner-mode: off 相关的配置全集 ： 点击查看\n编写Service link官方文档内容如下：\n@Service 注解会自动将服务注册到应用程序上下文中。Spring AI @Tool 注解，使得创建和维护 MCP 工具变得非常容易。The auto-configuration will automatically register these tools with the MCP server. 自动配置会自动将这些工具注册到 MCP 服务器上。\n作者按： 看起来与平常编写sevice，并无二异。但其中暗藏玄机\n和前面提到的一样， 编码过程不要出现任何打印输出的内容，如果非要打印，以err的形式打印 Sysout.err.println(); @Tool 注解会将对应的方法 注册到MCP服务器上作为工具使用 package com.xmic.mcp.data.analysis.service;\rimport com.fasterxml.jackson.databind.ObjectMapper;\rimport com.xmic.mcp.data.analysis.common.Constants;\rimport com.xmic.mcp.data.analysis.common.R;\rimport com.xmic.mcp.data.analysis.common.ResponseData;\rimport com.xmic.mcp.data.analysis.dto.DataQueryDTO;\rimport com.xmic.mcp.data.analysis.dto.ItemDTO;\rimport com.xmic.mcp.data.analysis.utils.JsonUtils;\rimport org.springframework.ai.tool.annotation.Tool;\rimport org.springframework.beans.factory.annotation.Autowired;\rimport org.springframework.stereotype.Service;\rimport org.springframework.web.client.RestClient;\rimport java.util.HashMap;\rimport java.util.List;\rimport java.util.Map;\rimport java.util.Objects;\r@Service\rpublic class DataQueryService {\r@Autowired\rprivate ObjectMapper objectMapper;\rprivate static final String BASE_URL = \"http://192.168.15.172/api\";\rprivate RestClient restClient;\rpublic DataQueryService() {\rthis.restClient = RestClient.builder()\r.baseUrl(BASE_URL)\r.defaultHeader(\"Accept\", \"*/*\")\r.defaultHeader(\"Content-Type\", \"application/json\")\r.defaultHeader(\"User-Agent\", \"WeatherApiClient/1.0 (zxt@xmic.com)\")\r.defaultHeader(\"Authorization\", Constants.TOKEN_NEVER_EXPIRE)\r.build();\r}\r@Tool(description = \"依据工作面code和设备因子名称查询对应的历史数据，包含 最大值，平均值，和最小值\")\rpublic String queryHistoryDataOnFaceCode(DataQueryDTO query) {\r// 判断query中 faceCode ,factorCode 不能为空\rif (Objects.isNull(query.getFaceCode()) || Objects.isNull(query.getFactorCodes())) {\rreturn \"faceCode 和 factorCode 不能为空\";\r}\rMap result = new HashMap\u003c\u003e();\rR response = restClient.post()\r.uri(\"/data/history/chart/figure2D\")\r.body(query)\r.retrieve()\r.body(R.class);\rif (Objects.isNull(response)) {\rresult.put(\"msg\", \"查询失败了\");\rreturn JsonUtils.toJson(result);\r}\rif (Objects.equals(response.getStatus(), R.OK)) {\rResponseData responseData = objectMapper.convertValue(response.getData(), ResponseData.class);\rMap"
+                description: "Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\n",
+                content: "Where are we?（我们现在在哪？） link现在已经拥有了数据分析平台，拥有的基本的数据查询和数据分析能力。\nWhere are we going?（我们要到哪⼉去？） link但是我们的分析平台想和AI进行结合，能够拥有更灵活，更简单，更智能的查询方式，能够通过自然语言去执行对应的查询和分析工作，不再依赖一板一眼的面板操作\nHow can we get there?（我们如何到达那⾥？） link增加MCP服务，衔接后端服务和智能体客户端（可以是Cursor，Trae这样的，也可以是自己开发的）\n示例 link MCP实现方式并不拘泥于某种编程语言，本文以Java实现。\nSystem requirements 系统要求 linkJava 17 或更高版本已安装。 Spring Boot 3.3.x 或更高版本\n依赖选择 link通过 SpringBoot 项目初始化之后，再额外添加以下依赖\norg.springframework.ai\rspring-ai-starter-mcp-server\rorg.springframework\rspring-web\rBest Practices 最佳实践 link 作者提示： 这里虽说是最佳实践，我以为是必须要严格执行的。后文中的属性配置，其实就是这里要求的具体实现。\nUse a logging library that writes to stderr or files. 使用将日志写入 stderr 或文件的日志库。 Ensure any configured logging library will not write to STDOUT 确保任何配置的日志库不会将日志写入 STDOUT 程序属性配置 link spring.main.bannerMode=off\rlogging.pattern.console= 或者习惯yaml的话\nlogging:\rpattern:\rconsole:\rspring:\rmain:\rbanner-mode: off 相关的配置全集 ： 点击查看\n编写Service link官方文档内容如下：\n@Service 注解会自动将服务注册到应用程序上下文中。Spring AI @Tool 注解，使得创建和维护 MCP 工具变得非常容易。The auto-configuration will automatically register these tools with the MCP server. 自动配置会自动将这些工具注册到 MCP 服务器上。\n作者按： 看起来与平常编写sevice，并无二异。但其中暗藏玄机\n和前面提到的一样， 编码过程不要出现任何打印输出的内容，如果非要打印，以err的形式打印 Sysout.err.println(); @Tool 注解会将对应的方法 注册到MCP服务器上作为工具使用 package com.xmic.mcp.data.analysis.service;\rimport com.fasterxml.jackson.databind.ObjectMapper;\rimport com.xmic.mcp.data.analysis.common.Constants;\rimport com.xmic.mcp.data.analysis.common.R;\rimport com.xmic.mcp.data.analysis.common.ResponseData;\rimport com.xmic.mcp.data.analysis.dto.DataQueryDTO;\rimport com.xmic.mcp.data.analysis.dto.ItemDTO;\rimport com.xmic.mcp.data.analysis.utils.JsonUtils;\rimport org.springframework.ai.tool.annotation.Tool;\rimport org.springframework.beans.factory.annotation.Autowired;\rimport org.springframework.stereotype.Service;\rimport org.springframework.web.client.RestClient;\rimport java.util.HashMap;\rimport java.util.List;\rimport java.util.Map;\rimport java.util.Objects;\r@Service\rpublic class DataQueryService {\r@Autowired\rprivate ObjectMapper objectMapper;\rprivate static final String BASE_URL = \"http://192.168.15.172/api\";\rprivate RestClient restClient;\rpublic DataQueryService() {\rthis.restClient = RestClient.builder()\r.baseUrl(BASE_URL)\r.defaultHeader(\"Accept\", \"*/*\")\r.defaultHeader(\"Content-Type\", \"application/json\")\r.defaultHeader(\"User-Agent\", \"WeatherApiClient/1.0 (zxt@xmic.com)\")\r.defaultHeader(\"Authorization\", Constants.TOKEN_NEVER_EXPIRE)\r.build();\r}\r@Tool(description = \"依据工作面code和设备因子名称查询对应的历史数据，包含 最大值，平均值，和最小值\")\rpublic String queryHistoryDataOnFaceCode(DataQueryDTO query) {\r// 判断query中 faceCode ,factorCode 不能为空\rif (Objects.isNull(query.getFaceCode()) || Objects.isNull(query.getFactorCodes())) {\rreturn \"faceCode 和 factorCode 不能为空\";\r}\rMap result = new HashMap\u003c\u003e();\rR response = restClient.post()\r.uri(\"/data/history/chart/figure2D\")\r.body(query)\r.retrieve()\r.body(R.class);\rif (Objects.isNull(response)) {\rresult.put(\"msg\", \"查询失败了\");\rreturn JsonUtils.toJson(result);\r}\rif (Objects.equals(response.getStatus(), R.OK)) {\rResponseData responseData = objectMapper.convertValue(response.getData(), ResponseData.class);\rMap"
             }
         );
     index.add(

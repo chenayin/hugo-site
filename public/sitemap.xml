@@ -14,11 +14,21 @@
     <loc>http://localhost:1313/docs/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2025-07-17T20:00:49+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/ai/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/mcp/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/ai/mcp-%E5%88%9D%E8%AF%95%E9%AA%8C/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/python/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/python/python/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/spring-ai/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
