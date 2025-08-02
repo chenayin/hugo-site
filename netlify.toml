@@ -1,17 +1,5 @@
 [build]
-  command = '''
-    echo "🔍 DEBUG: Starting build..."
-    echo "Hugo version requested: $HUGO_VERSION"
-    echo "Hugo extended enabled: $HUGO_EXTENDED"
-    echo "Current Hugo version:"
-    hugo version
-    echo "🔍 Downloading and building..."
-    hugo --gc --minify
-  '''
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.148.2"
-  HUGO_EXTENDED = "true"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "false"
+  HUGO_VERSION = "0.148.1"
