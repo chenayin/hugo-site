@@ -1,18 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Python on 别人打药我拽管</title>
-    <link>http://localhost:1313/docs/python/</link>
-    <description>Recent content in Python on 别人打药我拽管</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <atom:link href="http://localhost:1313/docs/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Python学习笔记</title>
-      <link>http://localhost:1313/docs/python/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/python/python/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;笔者为 Javaer 所以仅记录和Java语言的不同之处，方便快速学习&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;基础数据类型&#34;&gt;基础数据类型 &lt;a href=&#34;#%e5%9f%ba%e7%a1%80%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;数字&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;bool（布尔型）：True | False&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;笔者按： 布尔值要驼峰命令&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;complex （复数），如 1 + 2j、 1.1 + 2.2j。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;笔者按： 已经忘记复数这个数学概念啦~&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;字符串&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;索引&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;字符串的组成元素为字符，每个字符在字符串中有对应的索引。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;和java不同的是，不光有正序索引，还有倒序索引&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;    &#xA;      &lt;img src=&#34;http://localhost:1313/image-20250725122701207_6890670413197233091.png&#34; alt=&#34;image-20250725122701207&#34; width=&#34;931&#34; height=&#34;443&#34; loading=&#34;lazy&#34;&gt;&#xA;    &#xA;  &#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;截取&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;字符串的截取，都是 前闭后开 或者 叫 含头不含尾&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;python字符串的截取和索引强相关；&lt;/p&gt;&#xA;&lt;p&gt;但又因为有正序和倒序，两排索引，所以截取时非常灵活，使用时也要谨慎&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;  &#xA;    &#xA;      &lt;img src=&#34;http://localhost:1313/image-20250725124333658_17956901840035152325.png&#34; alt=&#34;image-20250725124333658&#34; width=&#34;955&#34; height=&#34;777&#34; loading=&#34;lazy&#34;&gt;&#xA;    &#xA;  &#xA;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;图片来自网络，倒数第二个例子有点奇怪： 描述和结果都不对；要实现输出结果ab，可通过如下方式&lt;/p&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# ab&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[:&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# ab&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;str&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abcdefg&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:]) &lt;span style=&#34;color:#75715e&#34;&gt;# bcdefg&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[:&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# abcde&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# bcde&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;:]) &lt;span style=&#34;color:#75715e&#34;&gt;# defg&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# 空字符串 是 &amp;#39;&amp;#39; 不是None&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;#bcde&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# 字符串反转  gfedcba&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# ab&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(str[:&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]) &lt;span style=&#34;color:#75715e&#34;&gt;# ab&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;列表&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;笔者按： 和Java中的数组特点一样； 最大最大的区别是 一个数组可以有不同类型的元素；&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 别人打药我拽管</title><link>https://net.chenayin.com/docs/python/</link><description>Recent content in Python on 别人打药我拽管</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://net.chenayin.com/docs/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python学习笔记</title><link>https://net.chenayin.com/docs/python/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://net.chenayin.com/docs/python/python/</guid><description>&lt;blockquote>
+&lt;p>笔者为 Javaer 所以仅记录和Java语言的不同之处，方便快速学习&lt;/p>&lt;/blockquote>
+&lt;h2 id="基础数据类型">基础数据类型 &lt;a href="#%e5%9f%ba%e7%a1%80%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b" class="anchor" aria-hidden="true">&lt;i class="material-icons align-middle">link&lt;/i>&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>数字&lt;/li>
+&lt;/ul>
+&lt;p>bool（布尔型）：True | False&lt;/p>
+&lt;blockquote>
+&lt;p>笔者按： 布尔值要驼峰命令&lt;/p>&lt;/blockquote>
+&lt;p>complex （复数），如 1 + 2j、 1.1 + 2.2j。&lt;/p>
+&lt;blockquote>
+&lt;p>笔者按： 已经忘记复数这个数学概念啦~&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>字符串&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>索引&lt;/li>
+&lt;/ol>
+&lt;p>字符串的组成元素为字符，每个字符在字符串中有对应的索引。&lt;/p>
+&lt;blockquote>
+&lt;p>和java不同的是，不光有正序索引，还有倒序索引&lt;/p>&lt;/blockquote>
+&lt;p>
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ &lt;img src="https://net.chenayin.com/image-20250725122701207_6890670413197233091.png" alt="image-20250725122701207" width="931" height="443" loading="lazy">
+ 
+ 
+&lt;/p>
+&lt;ol start="2">
+&lt;li>截取&lt;/li>
+&lt;/ol>
+&lt;p>字符串的截取，都是 前闭后开 或者 叫 含头不含尾&lt;/p>
+&lt;blockquote>
+&lt;p>python字符串的截取和索引强相关；&lt;/p>
+&lt;p>但又因为有正序和倒序，两排索引，所以截取时非常灵活，使用时也要谨慎&lt;/p>&lt;/blockquote>
+&lt;p>
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ &lt;img src="https://net.chenayin.com/image-20250725124333658_17956901840035152325.png" alt="image-20250725124333658" width="955" height="777" loading="lazy">
+ 
+ 
+&lt;/p>
+&lt;blockquote>
+&lt;p>图片来自网络，倒数第二个例子有点奇怪： 描述和结果都不对；要实现输出结果ab，可通过如下方式&lt;/p>
+
+
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>print(str[:&lt;span style="color:#ae81ff">2&lt;/span>]) &lt;span style="color:#75715e"># ab&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[:&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>]) &lt;span style="color:#75715e"># ab&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+
+
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>str&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;abcdefg&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[&lt;span style="color:#ae81ff">1&lt;/span>:]) &lt;span style="color:#75715e"># bcdefg&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[:&lt;span style="color:#ae81ff">5&lt;/span>]) &lt;span style="color:#75715e"># abcde&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[&lt;span style="color:#ae81ff">1&lt;/span>:&lt;span style="color:#ae81ff">5&lt;/span>]) &lt;span style="color:#75715e"># bcde&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">4&lt;/span>:]) &lt;span style="color:#75715e"># defg&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>:&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">6&lt;/span>]) &lt;span style="color:#75715e"># 空字符串 是 &amp;#39;&amp;#39; 不是None&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">6&lt;/span>:&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>]) &lt;span style="color:#75715e">#bcde&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[::&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>]) &lt;span style="color:#75715e"># 字符串反转 gfedcba&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[:&lt;span style="color:#ae81ff">2&lt;/span>]) &lt;span style="color:#75715e"># ab&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(str[:&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>]) &lt;span style="color:#75715e"># ab&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;ul>
+&lt;li>列表&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>笔者按： 和Java中的数组特点一样； 最大最大的区别是 一个数组可以有不同类型的元素；&lt;/p></description></item></channel></rss>
