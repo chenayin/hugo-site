@@ -1,4 +1,4 @@
 ---
-title: 举止优雅会写Java的猪
+title: Stay Hungry , Stay Foolish 
 ---
 

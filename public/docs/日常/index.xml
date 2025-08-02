@@ -1,21 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资讯文章 on 别人打药我拽管</title><link>https://net.chenayin.com/docs/%E6%97%A5%E5%B8%B8/</link><description>Recent content in 资讯文章 on 别人打药我拽管</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Jul 2025 20:00:49 +0800</lastBuildDate><atom:link href="https://net.chenayin.com/docs/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml"/><item><title>别怪 AI，杀死软件工程师黄金时代的，是互联网的普及</title><link>https://net.chenayin.com/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/</link><pubDate>Thu, 17 Jul 2025 20:00:49 +0800</pubDate><guid>https://net.chenayin.com/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/</guid><description>&lt;p>过去 25 年，从互联网到移动互联网的浪潮，创造了海量的工程需求，软件工程师也因此成为了时代的宠儿。但现在，这波巨大的增长红利期已经结束。&lt;/p>
-&lt;p>那下一个浪潮是什么？文章给出了答案：&lt;strong>Agentic AI (智能体 AI)&lt;/strong>。&lt;/p>
-&lt;p>这不仅仅是一个新技术，它将彻底重塑我们的工作方式，重写“软件工程师”这个岗位的核心要求。这不是一次普通的更新，这是一场彻底的进化。&lt;/p>
-&lt;h2 id="告别代码工人拥抱智能体工程师">告别“代码工人”，拥抱“智能体工程师” &lt;a href="#%e5%91%8a%e5%88%ab%e4%bb%a3%e7%a0%81%e5%b7%a5%e4%ba%ba%e6%8b%a5%e6%8a%b1%e6%99%ba%e8%83%bd%e4%bd%93%e5%b7%a5%e7%a8%8b%e5%b8%88" class="anchor" aria-hidden="true">&lt;i class="material-icons align-middle">link&lt;/i>&lt;/a>&lt;/h2>&lt;p>文章预言，软件工程师不会被淘汰，而是将进化，去“驾驭”这波新的 AI 浪潮。我们将成为所谓的 &lt;strong>“智能体软件工程师” (Agentic Software Engineer)&lt;/strong>。&lt;/p>
-&lt;p>在这个新角色下，我们的工作不再是整天埋头编写成千上万行代码。AI Agent 可以比我们更快、更不知疲倦地完成这项任务。我们的核心职责，将转变为：&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>一个指挥、协调、审查和运维 AI Agent 军团的专家。&lt;/strong>&lt;/p>&lt;/blockquote>
-&lt;p>我们从亲自下场比赛的“运动员”，变成了运筹帷幄的“教练”。&lt;/p>
-&lt;h2 id="ai-时代的生存指南你的技能升级清单">AI 时代的生存指南：你的技能升级清单 &lt;a href="#ai-%e6%97%b6%e4%bb%a3%e7%9a%84%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e4%bd%a0%e7%9a%84%e6%8a%80%e8%83%bd%e5%8d%87%e7%ba%a7%e6%b8%85%e5%8d%95" class="anchor" aria-hidden="true">&lt;i class="material-icons align-middle">link&lt;/i>&lt;/a>&lt;/h2>&lt;p>那么，要成为一名合格的“智能体软件工程师”，我们需要点亮哪些新的技能树？文章为我们梳理了一份极其宝贵的“技能升值/贬值清单”。&lt;/p>
-&lt;h3 id="技能升值-skills这-6-项能力将是你未来的护城河">技能升值 (Skills++)：这 6 项能力将是你未来的护城河 &lt;a href="#%e6%8a%80%e8%83%bd%e5%8d%87%e5%80%bc-skills%e8%bf%99-6-%e9%a1%b9%e8%83%bd%e5%8a%9b%e5%b0%86%e6%98%af%e4%bd%a0%e6%9c%aa%e6%9d%a5%e7%9a%84%e6%8a%a4%e5%9f%8e%e6%b2%b3" class="anchor" aria-hidden="true">&lt;i class="material-icons align-middle">link&lt;/i>&lt;/a>&lt;/h3>&lt;ul>
-&lt;li>版本控制 (Version Control)&lt;/li>
-&lt;/ul>
-&lt;p>Git 不再仅仅是你个人的代码管理工具，它将成为&lt;strong>协调你与成百上千个“AI 码农”协同工作的核心骨干&lt;/strong>。你需要用它来管理 Agent 的并行工作流、审查 Agent 提交的 PR、以及在 Agent 犯错时进行回滚。精通 Git 模型，将是从业基础。&lt;/p>
-&lt;ul>
-&lt;li>产品思维 (“Product”)&lt;/li>
-&lt;/ul>
-&lt;p>AI Agent 擅长执行，但前提是指令必须清晰。&lt;strong>任务分解、需求定义、接口设计&lt;/strong>等产品经理的核心技能，将成为每个工程师的必备能力。如果你无法将一个模糊的想法拆解成 Agent 可以处理的、足够小的任务块，你将无法与 Agent 高效协作。&lt;/p>
-&lt;ul>
-&lt;li>代码审查 (Code Review)&lt;/li>
-&lt;/ul>
-&lt;p>这是未来我们耗时最多的日常工作。当 Agent 可以在 10 分钟内生成 500 行复杂的代码时，你的价值就体现在审查这些代码的正确性、可维护性和安全性上。&lt;strong>接受吧，你正在从一个 Code Writer 变成一个 Code Editor。&lt;/strong>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>资讯文章 on 别人打药我拽管</title>
+    <link>http://localhost:1313/docs/%E6%97%A5%E5%B8%B8/</link>
+    <description>Recent content in 资讯文章 on 别人打药我拽管</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 17 Jul 2025 20:00:49 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>告别代码工人</title>
+      <link>http://localhost:1313/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/</link>
+      <pubDate>Thu, 17 Jul 2025 20:00:49 +0800</pubDate>
+      <guid>http://localhost:1313/docs/%E6%97%A5%E5%B8%B8/%E5%91%8A%E5%88%AB%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BA%BA/</guid>
+      <description>&lt;p&gt;过去 25 年，从互联网到移动互联网的浪潮，创造了海量的工程需求，软件工程师也因此成为了时代的宠儿。但现在，这波巨大的增长红利期已经结束。&lt;/p&gt;&#xA;&lt;p&gt;那下一个浪潮是什么？文章给出了答案：&lt;strong&gt;Agentic AI (智能体 AI)&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;这不仅仅是一个新技术，它将彻底重塑我们的工作方式，重写“软件工程师”这个岗位的核心要求。这不是一次普通的更新，这是一场彻底的进化。&lt;/p&gt;&#xA;&lt;h2 id=&#34;告别代码工人拥抱智能体工程师&#34;&gt;告别“代码工人”，拥抱“智能体工程师” &lt;a href=&#34;#%e5%91%8a%e5%88%ab%e4%bb%a3%e7%a0%81%e5%b7%a5%e4%ba%ba%e6%8b%a5%e6%8a%b1%e6%99%ba%e8%83%bd%e4%bd%93%e5%b7%a5%e7%a8%8b%e5%b8%88&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;文章预言，软件工程师不会被淘汰，而是将进化，去“驾驭”这波新的 AI 浪潮。我们将成为所谓的 &lt;strong&gt;“智能体软件工程师” (Agentic Software Engineer)&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;在这个新角色下，我们的工作不再是整天埋头编写成千上万行代码。AI Agent 可以比我们更快、更不知疲倦地完成这项任务。我们的核心职责，将转变为：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;一个指挥、协调、审查和运维 AI Agent 军团的专家。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;我们从亲自下场比赛的“运动员”，变成了运筹帷幄的“教练”。&lt;/p&gt;&#xA;&lt;h2 id=&#34;ai-时代的生存指南你的技能升级清单&#34;&gt;AI 时代的生存指南：你的技能升级清单 &lt;a href=&#34;#ai-%e6%97%b6%e4%bb%a3%e7%9a%84%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e4%bd%a0%e7%9a%84%e6%8a%80%e8%83%bd%e5%8d%87%e7%ba%a7%e6%b8%85%e5%8d%95&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;那么，要成为一名合格的“智能体软件工程师”，我们需要点亮哪些新的技能树？文章为我们梳理了一份极其宝贵的“技能升值/贬值清单”。&lt;/p&gt;&#xA;&lt;h3 id=&#34;技能升值-skills这-6-项能力将是你未来的护城河&#34;&gt;技能升值 (Skills++)：这 6 项能力将是你未来的护城河 &lt;a href=&#34;#%e6%8a%80%e8%83%bd%e5%8d%87%e5%80%bc-skills%e8%bf%99-6-%e9%a1%b9%e8%83%bd%e5%8a%9b%e5%b0%86%e6%98%af%e4%bd%a0%e6%9c%aa%e6%9d%a5%e7%9a%84%e6%8a%a4%e5%9f%8e%e6%b2%b3&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;版本控制 (Version Control)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Git 不再仅仅是你个人的代码管理工具，它将成为&lt;strong&gt;协调你与成百上千个“AI 码农”协同工作的核心骨干&lt;/strong&gt;。你需要用它来管理 Agent 的并行工作流、审查 Agent 提交的 PR、以及在 Agent 犯错时进行回滚。精通 Git 模型，将是从业基础。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品思维 (“Product”)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;AI Agent 擅长执行，但前提是指令必须清晰。&lt;strong&gt;任务分解、需求定义、接口设计&lt;/strong&gt;等产品经理的核心技能，将成为每个工程师的必备能力。如果你无法将一个模糊的想法拆解成 Agent 可以处理的、足够小的任务块，你将无法与 Agent 高效协作。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;代码审查 (Code Review)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这是未来我们耗时最多的日常工作。当 Agent 可以在 10 分钟内生成 500 行复杂的代码时，你的价值就体现在审查这些代码的正确性、可维护性和安全性上。&lt;strong&gt;接受吧，你正在从一个 Code Writer 变成一个 Code Editor。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

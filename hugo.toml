@@ -10,4 +10,12 @@ title = '别人打药我拽管'
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
 [params.docs]
+  prism =true
   prismTheme = "lucario"
+  intLinkTooltip   = true
+  sidebarIcons = true
+  titleIcon = true
+
+[params.footer]
+  copyright='**NineDoller**@**[Chenayin](http://net.chenayin.com)**'
+  version=true
