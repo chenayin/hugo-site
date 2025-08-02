@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts - 副本s on 别人打药我拽管</title>
+    <link>http://localhost:1313/posts---%E5%89%AF%E6%9C%AC/</link>
+    <description>Recent content in Posts - 副本s on 别人打药我拽管</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 30 Jul 2025 15:04:05 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts---%E5%89%AF%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Front Matter 详解</title>
+      <link>http://localhost:1313/posts---%E5%89%AF%E6%9C%AC/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Wed, 30 Jul 2025 15:04:05 +0800</pubDate>
+      <guid>http://localhost:1313/posts---%E5%89%AF%E6%9C%AC/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>帮助Javaer快速上手Python；并非一板一眼的教程或者笔记，多以不同之处进行比较，帮助读者快速理解使用</description>
+    </item>
+  </channel>
+</rss>
