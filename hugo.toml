@@ -10,6 +10,6 @@ title = '别人打药我拽管'
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
-		version = "v5.20300.20400"
+        version = "v5.20300.20400"
 [params.docs]
   prismTheme = "lucario"
