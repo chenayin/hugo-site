@@ -1,7 +1,12 @@
 ---
-title: MCP 初试验
+title: "MCP 初试验"
+date: 2025-08-04T11:25:06+08:00
+author: "Adao"
+weight: 1
 tags: ['MCP' ,'Spring AI','AI']
 ---
+
+
 
 ## Where are we?（我们现在在哪？）
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>元组 on 别人打药我拽管</title>
+    <link>http://localhost:1313/tags/%E5%85%83%E7%BB%84/</link>
+    <description>Recent content in 元组 on 别人打药我拽管</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 04 Aug 2025 11:25:06 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%85%83%E7%BB%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>列表和元组</title>
+      <link>http://localhost:1313/docs/python/%E5%88%97%E8%A1%A8%E5%92%8C%E5%85%83%E7%BB%84/</link>
+      <pubDate>Mon, 04 Aug 2025 11:25:06 +0800</pubDate>
+      <guid>http://localhost:1313/docs/python/%E5%88%97%E8%A1%A8%E5%92%8C%E5%85%83%E7%BB%84/</guid>
+      <description>&lt;h2 id=&#34;一列表和元组&#34;&gt;一、列表和元组 &lt;a href=&#34;#%e4%b8%80%e5%88%97%e8%a1%a8%e5%92%8c%e5%85%83%e7%bb%84&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;共同点&#34;&gt;共同点 &lt;a href=&#34;#%e5%85%b1%e5%90%8c%e7%82%b9&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;任意数据类型&lt;/strong&gt;的&lt;strong&gt;有序&lt;/strong&gt;集合&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;都⽀持负数索引&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;都⽀持切⽚操作&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;可以随意嵌套（其实就是任意数据类型的一种表现）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;通过list()和tuple()函数相互转换&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;不同点&#34;&gt;不同点 &lt;a href=&#34;#%e4%b8%8d%e5%90%8c%e7%82%b9&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;列表&lt;/th&gt;&#xA;          &lt;th&gt;元组&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;动态&lt;/td&gt;&#xA;          &lt;td&gt;静态&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;list.reverse() 倒转列表&lt;!-- raw HTML omitted --&gt;list.sort() 排序&lt;/td&gt;&#xA;          &lt;td&gt;没有内置的这两个函数&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;存储空间可变&lt;!-- raw HTML omitted --&gt;包含以下内容：&lt;!-- raw HTML omitted --&gt;- 指针&lt;!-- raw HTML omitted --&gt;- 已分配内容&lt;!-- raw HTML omitted --&gt;- 元素内容&lt;/td&gt;&#xA;          &lt;td&gt;存储空间固定&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;各有千秋&#34;&gt;各有千秋 &lt;a href=&#34;#%e5%90%84%e6%9c%89%e5%8d%83%e7%a7%8b&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;占用空间&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;集合元素少，空间差异可忽略；&lt;/p&gt;&#xA;&lt;p&gt;集合元素数量级大，空间差异明显 ，列表空间明显大于元组；&lt;/p&gt;&#xA;&lt;p&gt;可用作选择 列表和元组的参考因素&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;性能&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;元组性能略优&lt;/p&gt;&#xA;&lt;p&gt;原因如下：&lt;/p&gt;&#xA;&lt;p&gt;python优化静态数据-&amp;gt;资源缓存；&lt;/p&gt;&#xA;&lt;p&gt;元组属于静态数据，会被缓存，资源重复利用率高；&lt;/p&gt;&#xA;&lt;p&gt;在初始化方面，元组性能高于列表；&lt;/p&gt;&#xA;&lt;h2 id=&#34;二字典和集合&#34;&gt;二、字典和集合 &lt;a href=&#34;#%e4%ba%8c%e5%ad%97%e5%85%b8%e5%92%8c%e9%9b%86%e5%90%88&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

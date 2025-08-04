@@ -1,6 +1,11 @@
 ---
-title: Python学习笔记
+title: "Python"
+date: 2025-08-04T11:25:06+08:00
+author: "Adao"
+weight: 2
 ---
+
+
 
 
 
@@ -86,7 +91,6 @@ del list[1]
 list.append('red')
 ```
 
----
 
 
 
